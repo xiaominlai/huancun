@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MAaaaViewController.h"
+#import "AAAAATableViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    AAAAATableViewController *ma = [[AAAAATableViewController alloc]initWithNibName:@"AAAAATableViewController" bundle:nil];
+    self.window.rootViewController = ma;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
